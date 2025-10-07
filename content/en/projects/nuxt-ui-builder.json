@@ -1,0 +1,15 @@
+{
+  "title": "Nuxt UI 3 Theme Builder",
+  "description": "A powerful and flexible theme builder for Nuxt UI 3 applications.",
+  "technologies": [
+    "Node.js",
+    "Nuxt.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Nuxt UI"
+  ],
+  "wip": "true",
+  "featured": true,
+  "date": "2025-06",
+  "image": "/nuxt-ui-builder.webp"
+}

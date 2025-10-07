@@ -1,0 +1,15 @@
+{
+  "title": "เว็บสร้างธีม Nuxt UI 3",
+  "description": "เครื่องมือสร้างธีมที่ทรงพลังและยืดหยุ่นสำหรับแอปพลิเคชัน Nuxt UI 3",
+  "technologies": [
+    "Node.js",
+    "Nuxt.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Nuxt UI"
+  ],
+  "wip": "true",
+  "date": "2025-06",
+  "featured": true,
+  "image": "/nuxt-ui-builder.webp"
+}

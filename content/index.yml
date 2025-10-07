@@ -1,0 +1,26 @@
+title: zLorem Ipsum
+description: zLorem ipsum dolor sit amet.
+navigation: true
+hero:
+  title: zInnovation for the energy of today and tomorrow
+  description: vLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnatis aliqua ut enim ad minim veniam.
+  orientation: horizontal
+features:
+  title: dLorem ipsum
+  items:
+    - title: dLorem ipsum
+      description: pCrashum smashum lorem ipsum.
+    - title: pCrashum smashum
+      description: yLorem ipsum crashum smashum.
+    - title: yLorem ipsum
+      description: mCrashum smashum lorem ipsum.
+    - title: mCrashum smashum
+      description: kLorem ipsum crashum smashum.
+sections:
+  title: qCrashum smashum
+mid:
+  title: gLorem ipsum
+bottom:
+  title: uCrashum smashum
+lower:
+  title: xLorem ipsum

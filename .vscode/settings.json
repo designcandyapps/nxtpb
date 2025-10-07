@@ -1,0 +1,33 @@
+{
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["/\\*\\s?ui\\s?\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+  "tailwindCSS.experimental.configFile": "app/assets/css/main.css",
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "class:list", "ui"],
+  "eslint.useFlatConfig": true,
+  "conventionalCommits.scopes": [
+    ".vscode",
+    "Blog",
+    "Blog Slug",
+    "Blog Index",
+    "Blog Tag",
+    "Blog Middleware",
+    "MDC API",
+    "nuxt.config",
+    "MDC",
+    "MDC Component",
+    "deps",
+    "Azure",
+    "app",
+    "Bookmark",
+    "Project",
+    "TailwindCSS"
+  ],
+  "i18n-ally.localesPaths": [
+    "i18n",
+    "i18n/locales"
+  ],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "th"
+}
