@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxtjs/i18n',
+    //'@nuxtjs/i18n',
     '@nuxt/content',
   ],
   hooks: {
