@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+//**//const {data:page}=await useAsyncData('index',()=>queryContent('/').findOne())
+//**//useSeoMeta({titleTemplate:'',title:page.value.title,ogTitle:page.value.title,description:page.value.description,ogDescription:page.value.description})
 const fetchPh=async(query)=>{
   const response=await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&client_id=OOBNDpH2xNShX6T9wWV_-9py3NtxfpGT2zMcashaO_o`);
   const data=await response.json(); //alert("RES1P: "+JSON.stringify(data));
