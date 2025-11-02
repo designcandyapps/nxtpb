@@ -24,7 +24,7 @@ onMounted(()=>{
 </script>
 
 <template>
-  <div>
+  <!--div>
     <ULandingHero v-if="page.hero" v-bind="page.hero">
       <div class="g">
         <div id="z"><ColorThief /></div><input id="prompt" v-model="prompt"><input id="pho" v-model="pho"><input id="pho2" v-model="pho2">
@@ -37,12 +37,10 @@ onMounted(()=>{
     <ULandingSection :title="page.mid.title" :links="page.mid.links"><UPageGrid><ULandingCard v-for="(item,index) of page.mid.items" :key="index" v-bind="item" /></UPageGrid></ULandingSection>
     <ULandingSection :title="page.bottom.title" :links="page.bottom.links"><UPageGrid><ULandingCard v-for="(item,index) of page.bottom.items" :key="index" v-bind="item" /></UPageGrid></ULandingSection>
     <ULandingSection :title="page.lower.title" :links="page.lower.links"><UPageGrid><ULandingCard v-for="(item,index) of page.lower.items" :key="index" v-bind="item" /></UPageGrid></ULandingSection>
-  </div>
+  </div-->
 
 
-
-
-  <!--main>
+  <main>
     <img id="ee" src="https://pinfluents.com/_BCK/4/im/bp.png" width="60" height="60">
     <div class="g">
       <div id="t" style="border:3px solid red;"></div>
@@ -53,7 +51,7 @@ onMounted(()=>{
       <input id="pho" v-model="pho"><input id="pho2" v-model="pho2">
       <div id="response" v-if="response">{{response}}</div>
     </div>
-  </main-->
+  </main>
 </template>
 
 <script lang="ts">
