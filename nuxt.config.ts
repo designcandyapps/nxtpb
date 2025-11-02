@@ -52,6 +52,6 @@ export default defineNuxtConfig({
     detectBrowserLanguage:{useCookie:true,cookieKey:'i18n_language',redirectOn:'no prefix',fallbackLocale:'th'},
     vueI18n:'i18n.config.ts',
   },*/
-  icon: {customCollections:[{prefix:'my-icon',dir:'./app/assets/icons'}],provider:'iconify'},
+  //icon: {customCollections:[{prefix:'my-icon',dir:'./app/assets/icons'}],provider:'iconify'},
   //image: {cloudinary:{baseURL:'https://res.cloudinary.com/dqx4sss9s/image/upload'}},
 })
