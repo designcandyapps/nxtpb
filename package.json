@@ -10,24 +10,25 @@
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "auto-commit": "node scripts/auto-commit.cjs"
   },
   "dependencies": {
     "@nuxt/content": "3.5.1",
     "@nuxt/image": "^1.10.0",
-
     "@nuxt/ui": "^3.2.0",
-
     "@nuxthub/core": "0.9.0",
     "@nuxtjs/i18n": "9.5.6",
     "@vueuse/core": "13.4.0",
-    "motion-v": "1.5.0",
-
-    "nuxt": "^4.0.1",
-
+    "body-parser": "^2.2.0",
     "color-namer": "^1.4.0",
     "colorthief": "^2.6.0",
-    "culori": "^4.0.1"
+    "culori": "^4.0.1",
+    "express": "^5.1.0",
+    "motion-v": "1.5.0",
+    "nuxt": "^4.0.1",
+    "openai": "^6.8.0",
+    "stripe": "^19.2.0"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.7.1",
