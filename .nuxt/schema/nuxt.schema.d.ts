@@ -192,6 +192,372 @@ export interface NuxtCustomSchema {
    */
    customize?: IconifyIconCustomizeCallback,
   },
+
+  /**
+   * UI
+   * 
+   * UI Customization.
+   * 
+   * 
+   * @studioIcon i-mdi-palette-outline
+  */
+  ui?: {
+   /**
+    * Icons
+    * 
+    * Manage icons used in UI Pro.
+    * 
+    * 
+    * @studioIcon i-mdi-application-settings-outline
+   */
+   icons?: {
+    /**
+     * Search Bar
+     * 
+     * Icon to display in the search bar.
+     * 
+     * @default "i-heroicons-magnifying-glass-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-magnify
+    */
+    search?: string,
+
+    /**
+     * Dark mode
+     * 
+     * Icon of color mode button for dark mode.
+     * 
+     * @default "i-heroicons-moon-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-moon-waning-crescent
+    */
+    dark?: string,
+
+    /**
+     * Light mode
+     * 
+     * Icon of color mode button for light mode.
+     * 
+     * @default "i-heroicons-sun-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-white-balance-sunny
+    */
+    light?: string,
+
+    /**
+     * External Link
+     * 
+     * Icon for external link.
+     * 
+     * @default "i-heroicons-arrow-up-right-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-arrow-top-right
+    */
+    external?: string,
+
+    /**
+     * Chevron
+     * 
+     * Icon for chevron.
+     * 
+     * @default "i-heroicons-chevron-down-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-chevron-down
+    */
+    chevron?: string,
+
+    /**
+     * Hash
+     * 
+     * Icon for hash anchors.
+     * 
+     * @default "i-heroicons-hashtag-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-ph-hash
+    */
+    hash?: string,
+   },
+
+   /**
+    * Primary
+    * 
+    * Primary color of your UI.
+    * 
+    * @default "green"
+    * 
+    * @required sky,mint,rose,amber,violet,emerald,fuchsia,indigo,lime,orange,pink,purple,red,teal,yellow,green,blue,cyan,gray,white,black
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-palette-outline
+   */
+   primary?: string,
+
+   /**
+    * Gray
+    * 
+    * Gray color of your UI.
+    * 
+    * @default "slate"
+    * 
+    * @required slate,cool,zinc,neutral,stone
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-palette-outline
+   */
+   gray?: string,
+  },
+
+  /**
+   * SEO
+   * 
+   * SEO configuration.
+   * 
+   * 
+   * @studioIcon i-ph-app-window
+  */
+  seo?: {
+   /**
+    * Site Name
+    * 
+    * Name used in ogSiteName and used as second part of your page title (My page title - Nuxt UI Pro).
+    * 
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-web
+   */
+   siteName?: string,
+  },
+
+  /**
+   * Header
+   * 
+   * Header configuration.
+   * 
+   * 
+   * @studioIcon i-mdi-page-layout-header
+  */
+  header?: {
+   /**
+    * Logo
+    * 
+    * Header logo configuration.
+    * 
+    * 
+    * @studioIcon i-mdi-image-filter-center-focus-strong-outline
+   */
+   logo?: {
+    /**
+     * Light Mode Logo
+     * 
+     * Pick an image from your gallery.
+     * 
+     * @default ""
+     * 
+     * @studioInput media
+     * 
+     * @studioIcon i-mdi-white-balance-sunny
+    */
+    light?: string,
+
+    /**
+     * Dark Mode Logo
+     * 
+     * Pick an image from your gallery.
+     * 
+     * @default ""
+     * 
+     * @studioInput media
+     * 
+     * @studioIcon i-mdi-moon-waning-crescent
+    */
+    dark?: string,
+
+    /**
+     * Alt
+     * 
+     * Alt to display for accessibility.
+     * 
+     * @default ""
+     * 
+     * @studioInput string
+     * 
+     * @studioIcon i-mdi-alphabet-latin
+    */
+    alt?: string,
+   },
+
+   /**
+    * Search Bar
+    * 
+    * Hide or display the search bar.
+    * 
+    * @default true
+    * 
+    * @studioInput boolean
+    * 
+    * @studioIcon i-mdi-magnify
+   */
+   search?: boolean,
+
+   /**
+    * Color Mode
+    * 
+    * Hide or display the color mode button in your header.
+    * 
+    * @default true
+    * 
+    * @studioInput boolean
+    * 
+    * @studioIcon i-mdi-moon-waning-crescent
+   */
+   colorMode?: boolean,
+
+   /**
+    * Links
+    * 
+    * Array of link object displayed in header.
+    * 
+    * 
+    * @studioInput array
+    * 
+    * @studioIcon i-mdi-link-variant
+   */
+   links?: Array<any>,
+  },
+
+  /**
+   * Footer
+   * 
+   * Footer configuration.
+   * 
+   * 
+   * @studioIcon i-mdi-page-layout-footer
+  */
+  footer?: {
+   /**
+    * Footer credits section
+    * 
+    * Text to display as credits in the footer.
+    * 
+    * @default ""
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-circle-edit-outline
+   */
+   credits?: string,
+
+   /**
+    * Color Mode
+    * 
+    * Hide or display the color mode button in the footer.
+    * 
+    * @default false
+    * 
+    * @studioInput boolean
+    * 
+    * @studioIcon i-mdi-moon-waning-crescent
+   */
+   colorMode?: boolean,
+
+   /**
+    * Links
+    * 
+    * Array of link object displayed in footer.
+    * 
+    * 
+    * @studioInput array
+    * 
+    * @studioIcon i-mdi-link-variant
+   */
+   links?: Array<any>,
+  },
+
+  /**
+   * Table of contents
+   * 
+   * TOC configuration.
+   * 
+   * 
+   * @studioIcon i-mdi-table-of-contents
+  */
+  toc?: {
+   /**
+    * Title
+    * 
+    * Text to display as title of the main toc.
+    * 
+    * @default ""
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-format-title
+   */
+   title?: string,
+
+   /**
+    * Bottom
+    * 
+    * Bottom TOC configuration.
+    * 
+    * 
+    * @studioIcon i-mdi-table-of-contents
+   */
+   bottom?: {
+    /**
+     * Title
+     * 
+     * Text to display as title of the bottom toc.
+     * 
+     * @default ""
+     * 
+     * @studioInput string
+     * 
+     * @studioIcon i-mdi-format-title
+    */
+    title?: string,
+
+    /**
+     * Edit Page Link
+     * 
+     * URL of your repository content folder.
+     * 
+     * @default ""
+     * 
+     * @studioInput string
+     * 
+     * @studioIcon i-ph-note-pencil
+    */
+    edit?: string,
+
+    /**
+     * Links
+     * 
+     * Array of link object displayed in bottom toc.
+     * 
+     * 
+     * @studioInput array
+     * 
+     * @studioIcon i-mdi-link-variant
+    */
+    links?: Array<any>,
+   },
+  },
  },
 }
 export type CustomAppConfig = Exclude<NuxtCustomSchema['appConfig'], undefined>
