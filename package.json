@@ -10,13 +10,12 @@
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "auto-commit": "node scripts/auto-commit.cjs"
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
     "@nuxt/content": "3.5.1",
     "@nuxt/image": "^1.10.0",
-    "@nuxt/ui": "^3.2.0",
+    "@nuxt/ui": "3.2.0",
     "@nuxthub/core": "0.9.0",
     "@nuxtjs/i18n": "9.5.6",
     "@vueuse/core": "13.4.0",
@@ -27,8 +26,8 @@
     "express": "^5.1.0",
     "motion-v": "1.5.0",
     "nuxt": "^4.0.1",
-    "openai": "^6.8.0",
-    "stripe": "^19.2.0"
+    "openai": "^6.7.0",
+    "oxc-transform": "^0.94.0"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.7.1",
@@ -46,5 +45,5 @@
     "unrs-resolver",
     "vue-demi"
   ],
-  "packageManager": "pnpm@9.15.3"
+  "packageManager": "pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184"
 }
