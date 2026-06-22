@@ -34,7 +34,8 @@ onMounted(()=>{
     setTimeout(function(){
       //alert("1: "+document.getElementById("ee").src);
       //imageUrl.value=document.getElementById("i1").firstChild.src;
-      imageUrl.value=document.getElementById("ee").src;
+
+      //imageUrl.value=document.getElementById("ee").src;
       //alert("IM: "+imageUrl.value);
       generatePalette();
     },1800);
