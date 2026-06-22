@@ -28,14 +28,14 @@ function discoverPalettes(colors){const palettes={}; for(const color of colors){
 function isColorEqual(c1,c2){return c1.h===c2.h&&c1.l===c2.l&&c1.c===c2.c}
 
 onMounted(()=>{
-  //alert("0: "+document.getElementById("y").innerHTML);
+  alert("0: "+document.getElementById("y").innerHTML);
   //alert("2: "+document.getElementById("ee").src);
   window.onload=function(){
     setTimeout(function(){
       //alert("1: "+document.getElementById("ee").src);
       //imageUrl.value=document.getElementById("i1").firstChild.src;
       imageUrl.value=document.getElementById("ee").src;
-      //alert("IM: "+imageUrl.value);
+      alert("IM: "+imageUrl.value);
       generatePalette();
     },1800);
   }
