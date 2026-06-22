@@ -1,5 +1,7 @@
 <script setup>
-import {ref,onMounted} from "vue"; import ColorThief from "colorthief"; import {converter,differenceEuclidean,formatHex,nearest} from "culori";
+import {ref,onMounted} from "vue";
+//import ColorThief from "colorthief";
+import {converter,differenceEuclidean,formatHex,nearest} from "culori";
 const imageUrl=ref(""); const proxyUrl=ref(""); const palette=ref([]); const backgroundImage=ref(""); const toLCH=converter("lch"); const isLoading=ref(false);
 
 const generatePalette=async()=>{
@@ -35,7 +37,7 @@ onMounted(()=>{
       //alert("1: "+document.getElementById("ee").src);
       //imageUrl.value=document.getElementById("i1").firstChild.src;
 
-      //imageUrl.value=document.getElementById("ee").src;
+      imageUrl.value=document.getElementById("ee").src;
       //alert("IM: "+imageUrl.value);
       generatePalette();
     },1800);
