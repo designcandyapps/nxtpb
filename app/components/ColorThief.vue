@@ -1,4 +1,5 @@
 <script setup>
+alert(1);
 import {ref,onMounted} from "vue";
 //import ColorThief from "colorthief";
 import {converter,differenceEuclidean,formatHex,nearest} from "culori";
