@@ -1,6 +1,6 @@
 <script setup>
 import {ref,onMounted} from "vue";
-import ColorThief from "colorthief";
+//import ColorThief from "colorthief";
 import {converter,differenceEuclidean,formatHex,nearest} from "culori";
 const imageUrl=ref(""); const proxyUrl=ref(""); const palette=ref([]); const backgroundImage=ref(""); const toLCH=converter("lch"); const isLoading=ref(false);
 
