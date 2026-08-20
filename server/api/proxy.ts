@@ -1,6 +1,8 @@
 export default defineEventHandler(async(event)=>{
-  //alert("Ptrk2");
-  const query=getQuery(event); const imageUrl=query.url as string;
+  const query=getQuery(event);
+  const imageUrl=query.url as string;
+    alert("IU: "+ImageURL);
+
   if(!imageUrl){return new Response("Invalid URL",{status:400})}
   try{const response=await fetch(imageUrl,{headers:{"User-Agent":"Mozilla/5.0"}});
   if(!response.ok){return new Response("Error",{status:500})}
