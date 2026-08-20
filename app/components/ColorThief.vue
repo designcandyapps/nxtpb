@@ -10,7 +10,7 @@ const toLCH=converter("lch");
 const isLoading=ref(false);
 
 const generatePalette=async()=>{
-  isLoading.value=true; proxyUrl.value=`/api/proxy?url=${encodeURIComponent(imageUrl.value)}`; alert("UU: "+proxyUrl.value);
+  isLoading.value=true; proxyUrl.value=`/api/proxy?url=${encodeURIComponent(imageUrl.value)}`; alert("proxyUrl: "+proxyUrl.value);
   const img=new Image(); img.crossOrigin="Anonymous"; img.src=proxyUrl.value;
   //alert("II: "+img.src);
   img.onload=()=>{
