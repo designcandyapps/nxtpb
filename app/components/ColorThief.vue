@@ -1,13 +1,18 @@
 <script setup>
 import {ref,onMounted} from "vue";
-//import ColorThief from "colorthief";
+import ColorThief from "colorthief";
 import {converter,differenceEuclidean,formatHex,nearest} from "culori";
-const imageUrl=ref(""); const proxyUrl=ref(""); const palette=ref([]); const backgroundImage=ref(""); const toLCH=converter("lch"); const isLoading=ref(false);
+const imageUrl=ref("");
+const proxyUrl=ref("");
+const palette=ref([]);
+const backgroundImage=ref("");
+const toLCH=converter("lch");
+const isLoading=ref(false);
 
 const generatePalette=async()=>{
   isLoading.value=true; proxyUrl.value=`/api/proxy?url=${encodeURIComponent(imageUrl.value)}`; alert("UU: "+proxyUrl.value);
   const img=new Image(); img.crossOrigin="Anonymous"; img.src=proxyUrl.value;
-  alert("II: "+img.src);
+  //alert("II: "+img.src);
   img.onload=()=>{
     //alert("IMG: "+img);
     const colorThief=new ColorThief(); let colors=colorThief.getPalette(img).map((c)=>toLCH({r:c[0]/255,g:c[1]/255,b:c[2]/255,mode:"rgb"}));
@@ -32,10 +37,10 @@ function isColorEqual(c1,c2){return c1.h===c2.h&&c1.l===c2.l&&c1.c===c2.c}
 
 onMounted(()=>{
   //alert("0: "+document.getElementById("y").innerHTML);
-  alert("2: "+document.getElementById("ee").src);
+  //alert("2: "+document.getElementById("ee").src);
   window.onload=function(){
     setTimeout(function(){
-      alert("1: "+document.getElementById("ee").src);
+      //alert("1: "+document.getElementById("ee").src);
       //imageUrl.value=document.getElementById("i1").firstChild.src;
 
       imageUrl.value=document.getElementById("ee").src;
