@@ -10,6 +10,7 @@ const toLCH=converter("lch");
 const isLoading=ref(false);
 
 const generatePalette=async()=>{
+  alert(1);
   isLoading.value=true; proxyUrl.value=`/api/proxy?url=${encodeURIComponent(imageUrl.value)}`; alert("UU: "+proxyUrl.value);
   const img=new Image(); img.crossOrigin="Anonymous"; img.src=proxyUrl.value;
   //alert("II: "+img.src);
@@ -38,6 +39,7 @@ function isColorEqual(c1,c2){return c1.h===c2.h&&c1.l===c2.l&&c1.c===c2.c}
 onMounted(()=>{
   window.onload=function(){
     setTimeout(function(){
+      alert(0);
       imageUrl.value=document.getElementById("ee").src;
       generatePalette();
     },1800);
