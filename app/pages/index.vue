@@ -57,7 +57,7 @@ onMounted(()=>{
 <script lang="ts">
 export default{
   data(){return{pr:"",response:null}},
-  //mounted(){setTimeout(()=>{this.send()},300)},
+  mounted(){setTimeout(()=>{this.send()},300)},
   methods:{
     async send(){
       const response=await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:document.querySelector("#pr").value})});
